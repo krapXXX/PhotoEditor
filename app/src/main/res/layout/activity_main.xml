@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D14"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STUDIO / 2.0"
+            android:textColor="#BB9AFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo Editor"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make every moment a masterpiece."
+            android:textColor="#9696A8"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="22dp"
+            android:background="#242431">
+
+            <ImageView
+                android:id="@+id/photoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:contentDescription="Edited photograph"/>
+
+            <TextView
+                android:id="@+id/emptyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="YOUR CREATIVE SPACE\n\nCapture or import an image"
+                android:textColor="#A7A4BA"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp">
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Camera"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7654C7"/>
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Gallery"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#373747"/>
+
+            <Button
+                android:id="@+id/btnInternet"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Internet"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#373747"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="COLOR FILTERS"
+            android:textColor="#C6C2D4"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOriginal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:text="Original"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#7654C7"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnBW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="B&amp;W"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnSepia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Sepia"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnVintage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Vintage"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnCool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Cool"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnWarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Warm"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/btnEnhance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Enhance"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#373747"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="TRANSFORM"
+            android:textColor="#C6C2D4"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Rotate"
+                android:textAllCaps="false"
+                android:backgroundTint="#373747"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnMirror"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Mirror"
+                android:textAllCaps="false"
+                android:backgroundTint="#373747"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnCrop"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Crop 1:1"
+                android:textAllCaps="false"
+                android:backgroundTint="#373747"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Undo last change"
+            android:textAllCaps="false"
+            android:backgroundTint="#272735"
+            android:textColor="#C6B4FF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="EXPORT YOUR ART"
+            android:textColor="#C6C2D4"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#397D68"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#7654C7"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:text="Ready to create"
+            android:textColor="#BDA3FF"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+</ScrollView>
